@@ -1,0 +1,26 @@
+# Git ignore for a monorepo containing frontend and backend
+
+# Node.js dependencies
+/frontend/node_modules/
+/backend/node_modules/
+
+# Build artifacts
+/frontend/dist/
+/frontend/build/
+/backend/dist/  # If your backend also produces a 'dist' folder
+/backend/__pycache__/ # Common Python cache for backend
+/backend/.pytest_cache/ # If using pytest
+/backend/*.pyc # Python compiled files
+
+# Environment variables
+.env
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# OS and Editor specific
+.DS_Store
+.vscode/ # VS Code settings specific to your machine
